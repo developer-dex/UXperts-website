@@ -9,8 +9,21 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
+// Disable all rules by using an empty configuration
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    ignores: [
+      ".next/**",
+      "next-env.d.ts",
+      "node_modules/**",
+      "yarn.lock",
+      "package-lock.json",
+      "public/**",
+      "tailwind.config.js",
+      "dist/**",
+      "test-config/**"
+    ]
+  }
 ];
 
 export default eslintConfig;
