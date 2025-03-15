@@ -1,0 +1,68 @@
+{
+  "plugins": ["@typescript-eslint", "import", "unused-imports", "next-image"],
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "off",
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off",
+    "react/jsx-no-target-blank": "off",
+    "react/no-unknown-property": "off",
+    "react/react-in-jsx-scope": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@next/next/no-html-link-for-pages": "off",
+    "@next/next/no-img-element": "off",
+    "jsx-a11y/alt-text": "off",
+    "import/first": "off",
+    "import/order": "off",
+    "import/no-relative-parent-imports": "off",
+    "import/no-relative-packages": "off",
+    "import/no-useless-path-segments": "off",
+    "unused-imports/no-unused-imports": "off",
+    "testing-library/consistent-data-testid": "off",
+    "react/jsx-curly-brace-presence": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "react/jsx-pascal-case": "off",
+    "react/no-unstable-nested-components": "off",
+    "react/function-component-definition": "off",
+    "react/self-closing-comp": "off",
+    "eqeqeq": "off",
+    "testing-library/await-async-events": "off",
+    "prefer-const": "off",
+    "react/no-unused-prop-types": "off",
+    "prefer-destructuring": "off",
+    "no-var": "off",
+    "quote-props": "off",
+    "prefer-template": "off",
+    "default-param-last": "off",
+    "prefer-spread": "off",
+    "prefer-arrow-callback": "off",
+    "no-duplicate-imports": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "no-restricted-syntax": "off",
+    "next-image/static": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
+      "extends": ["plugin:testing-library/react"]
+    }
+  ],
+  "settings": {
+    "import/resolver": {
+      "eslint-import-resolver-custom-alias": {
+        "alias": {
+          "@": "./src"
+        },
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}

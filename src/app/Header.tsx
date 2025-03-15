@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../public/logos/logo.png';
-// import Container from '../../public/logos/Container.png';
+import Container from '../../public/logos/Container.png';
 import container from '../../public/logos/container.png';
 
 const Header = () => {
@@ -21,9 +21,9 @@ const Header = () => {
 
       {/* Right Section */}
       <div className="flex items-center gap-3">
-        {/* <div className="w-8 h-8 rounded-full flex items-center justify-center">
-          <img src={container.src} alt="container" />
-        </div> */}
+        <div className="w-8 h-8 rounded-full flex items-center justify-center">
+          <img src={Container.src} alt="container" />
+        </div>
         <div className="w-8 h-8 rounded-full flex items-center justify-center">
           <img src={container.src} alt="container" />
         </div>
