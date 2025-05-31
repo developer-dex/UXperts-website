@@ -1,5 +1,5 @@
 import React from 'react';
-
+import footerLogo from '../../public/logos/footer-cdn.png';
 
 interface SocialLinkProps {
   name: string;
@@ -17,7 +17,7 @@ const SocialLink: React.FC<SocialLinkProps> = ({ name, href }) => {
   );
 };
 
-const StatusIndicator: React.FC = () => {
+export const StatusIndicator: React.FC = () => {
   return (
     <div className="relative w-3.5 h-3.5">
       <div>
@@ -108,7 +108,7 @@ const Footer = () => {
           </p>
           <div className="-rotate-90">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/158a3d4c9cd6ce0d5108474fb260aaa342b6e664"
+              src={footerLogo.src}
               className="w-8 h-8"
               alt="Logo"
             />

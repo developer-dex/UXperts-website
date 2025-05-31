@@ -1,5 +1,5 @@
 import React from 'react';
-import bgImage from '../../public/logos/bg-image.png';
+import designPartner from '../../public/logos/design-p.svg';
 
 const DesignPartner = () => {
   return (
@@ -46,7 +46,7 @@ const DesignPartner = () => {
                 </p>
 
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/05f5c638e32df83e512d341db369fbd0e59d7356f5953c107a98a2500f5a5291?placeholderIfAbsent=true&apiKey=e9c16f4162d64b8191dcdb7a32baf992"
+                  src={designPartner.src}
                   alt="Global team distribution map"
                   className="object-contain mt-7 aspect-[5.75] w-[449px] max-md:max-w-full"
                 />

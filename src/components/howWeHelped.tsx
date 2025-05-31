@@ -6,6 +6,7 @@ import spatialOne from '../../public/logos/spatial-1.png';
 import gradientImage from '../../public/logos/gradient-img.png';
 import arrowWhite from '../../public/logos/vector-white.png';
 import arrowBlack from '../../public/logos/vector-black.png';
+import Tag from './tag';
 
 const BusinessIntelligenceChip = ({ text }: { text: string }) => {
   return (
@@ -140,7 +141,10 @@ const HowWeHelped = () => {
               </button>
             </div>
           </div>
-          <img src={gradientImage.src} alt='gradient' />
+          <div className='relative'>
+            <img src={gradientImage.src} alt='gradient' />
+            <Tag text="NEW PROJECTS" classname='right-5 top-5' />
+          </div>
         </div>
       </div>
     </section>

@@ -32,97 +32,97 @@ const WhatWeDo = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             {/* Left column - Who we work with */}
             <div className="bg-[#F5F5F5] rounded-xl p-5">
-              <h3 className="font-inter text-xs uppercase text-gray-500 mb-6">
+              <h3 className="font-jetbrains text-xs uppercase text-gray-500 mb-4">
                 WHO WE WORK WITH:
               </h3>
               <div className="flex flex-wrap gap-2">
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   AI
                 </span>
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   AR/VR
                 </span>
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   Fintech
                 </span>
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   SaaS
                 </span>
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   Emerging tech
                 </span>
               </div>
               <div className="flex flex-wrap gap-2 mt-2">
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   web3
                 </span>
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   e-com
                 </span>
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   BI
                 </span>
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   Real estate
                 </span>
               </div>
 
-              <h3 className="font-inter text-xs uppercase text-gray-500 mt-10 mb-6">
+              <h3 className="font-jetbrains text-xs uppercase text-gray-500 mt-10 mb-4">
                 OUR CLIENTS INCLUDE:
               </h3>
               <div className="flex flex-wrap gap-2">
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   SeamlessAI
                 </span>
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   Datawizz
                 </span>
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   Lightdash
                 </span>
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   Spatialinc
                 </span>
               </div>
               <div className="flex flex-wrap gap-2 mt-2">
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   GanAI
                 </span>
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   DroxyAI
                 </span>
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   Zave.it
                 </span>
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   Intro.co
                 </span>
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   ColdIQ
                 </span>
               </div>
               <div className="flex flex-wrap gap-2 mt-2">
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   RecruitU
                 </span>
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   GetQuotient
                 </span>
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   GymCrush
                 </span>
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   TravelWith
                 </span>
               </div>
               <div className="flex flex-wrap gap-2 mt-2">
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   Sincera.io
                 </span>
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   Blockview.ai
                 </span>
-                <span className="font-inter px-2 py-0.5 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
+                <span className="font-inter px-2 py-0.5 text-gray-500 bg-white rounded-md border border-dashed border-gray-300 text-sm leading-tight h-[29px] flex items-center">
                   Servicebell
                 </span>
                 <button className="font-inter px-4 py-0.5 bg-black text-white rounded-md text-sm leading-tight h-[29px] flex items-center ml-2">
@@ -133,7 +133,7 @@ const WhatWeDo = () => {
 
             {/* Right column - What we do */}
             <div className="bg-[#000000] text-white rounded-xl p-5">
-              <h3 className="font-inter text-xs uppercase text-gray-400 mb-6">
+              <h3 className="font-jetbrains text-xs uppercase text-gray-400 mb-4">
                 WHAT WE DO:
               </h3>
               <div className="flex flex-wrap gap-2">
@@ -173,7 +173,7 @@ const WhatWeDo = () => {
                 </span>
               </div>
 
-              <h3 className="font-inter text-xs uppercase text-gray-400 mt-10 mb-6">
+              <h3 className="font-jetbrains text-xs uppercase text-gray-400 mt-10 mb-4">
                 HOW FAST WE DO IT:
               </h3>
               <div className="flex flex-wrap gap-2">

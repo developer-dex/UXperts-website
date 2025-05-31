@@ -5,7 +5,7 @@ import container from '../../public/logos/container.png';
 
 const Header = () => {
   return (
-    <nav className="fixed z-50 top-5 left-1/2 -translate-x-1/2 w-[960px] h-20 bg-[#333333]/90 backdrop-blur-sm rounded-full px-6 flex items-center justify-between">
+    <nav className="ml-4 fixed z-50 top-5 left-1/2 -translate-x-1/2 w-[960px] h-20 bg-[#333333]/90 backdrop-blur-sm rounded-full px-6 flex items-center justify-between">
       {/* Logo */}
       <div className="flex items-center gap-2">
         <img src={logo.src} alt="logo" className="w-10 h-10" />

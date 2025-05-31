@@ -9,6 +9,7 @@ import HappyClients from "@/components/happyClients";
 import Faqs from "@/components/faqs";
 import DesignPartner from "@/components/designPartner";
 import Footer from "@/components/footer";
+import BookingForm from "@/components/bookingForm";
 
 export default function Home() {
   // Generate array of numbers from 50 to 850 with step of 50
@@ -55,6 +56,7 @@ export default function Home() {
         <hr />
         <Faqs />
         <DesignPartner />
+        <BookingForm />
         <Footer />
         <style jsx>{`
           .vLine {
@@ -68,7 +70,7 @@ export default function Home() {
             width: 1px;
             height: 898px;
             background-color: #CBD5E180;
-            margin-left: 1600px;
+            margin-left: 1750px;
             position: absolute;
           }
           .circle {

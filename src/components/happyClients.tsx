@@ -1,7 +1,12 @@
 import React from 'react'
 import recruitU from '../../public/logos/recruitU.png';
 import brooks from '../../public/logos/brooks.png';
-
+import zave from '../../public/logos/zave.svg';
+import light from '../../public/logos/light.png';
+import recruit from '../../public/logos/recruit.png';
+import icon4 from '../../public/logos/icon4.png';
+import spatial2 from '../../public/logos/spatial2.png';
+import droxy from '../../public/logos/droxy.png';
 const HappyClients = () => {
 
   const numbers = Array.from({ length: 17 }, (_, i) => (i + 1) * 50);
@@ -28,7 +33,7 @@ const HappyClients = () => {
       </article>
       <div className="absolute left-[475px] h-[850px] flex flex-col justify-between py-4">
       </div>
-      <section className="w-full py-24 bg-[#FAFAFA] items-center ml-16">
+      <section className="w-full py-24 bg-[#FAFAFA] items-center">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <p className="font-jetbrains text-xs uppercase text-gray-500 mb-2">
@@ -60,7 +65,7 @@ const HappyClients = () => {
               <section className="overflow-hidden rounded bg-neutral-100 w-[170px]">
                 <article className="flex flex-col justify-center border border-dashed p-8 w-full rounded border-neutral-200">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/376fddda455908ba59070afb0bf5505ebd2be9adfa4937ebbfd686b86808ecc7?placeholderIfAbsent=true"
+                    src={light.src}
                     alt="Content image"
                     className="object-contain aspect-[3.62] w-[116px]"
                   />
@@ -69,7 +74,7 @@ const HappyClients = () => {
               <article className="relative h-24 bg-white rounded border border-dashed border-neutral-200 w-[170px]">
                 <figure className="flex justify-center items-center p-8">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/6934efc51c8c5e1f4fba2c7446b2b418f476d77d"
+                    src={recruit.src}
                     alt="RecruitU logo"
                     className="h-[18px] w-[90px] max-md:w-20 max-md:h-4 max-sm:h-3.5 max-sm:w-[70px]"
                   />
@@ -81,7 +86,7 @@ const HappyClients = () => {
               <section className="overflow-hidden rounded bg-neutral-100 w-[170px]">
                 <article className="flex flex-col justify-center border border-dashed p-8 w-full rounded border-neutral-200">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/c9a8c80b3f0f97c05c3810b2ba0a95fb44d9887b3b964e1f4d0b265bdfbebcc9?placeholderIfAbsent=true&apiKey=e9c16f4162d64b8191dcdb7a32baf992"
+                    src={zave.src}
                     alt="Logo"
                     className="object-contain aspect-[3.62] w-[116px]"
                   />
@@ -90,7 +95,7 @@ const HappyClients = () => {
               <section className="overflow-hidden rounded bg-neutral-100 w-[170px]">
                 <article className="flex flex-col justify-center border border-dashed p-8 w-full rounded border-neutral-200">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/fce23166c45343c819395bce4b87b0a60022ffdcb48deceeefe54d826f21fb80?placeholderIfAbsent=true&apiKey=e9c16f4162d64b8191dcdb7a32baf992"
+                    src={icon4.src}
                     alt="Content image"
                     className="object-contain aspect-[3.62] w-[116px]"
                   />
@@ -99,7 +104,7 @@ const HappyClients = () => {
               <section className="overflow-hidden rounded bg-neutral-100 w-[170px]">
                 <article className="flex flex-col justify-center border border-dashed p-8 w-full rounded border-neutral-200">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/f991b27c2af2bc9dc30abafed3962688717b7d44fa0f6c4dbf48549027e62e2d?placeholderIfAbsent=true&apiKey=e9c16f4162d64b8191dcdb7a32baf992"
+                    src={spatial2.src}
                     alt="Logo"
                     className="object-contain aspect-[3.62] w-[116px]"
                   />
@@ -108,7 +113,7 @@ const HappyClients = () => {
               <section className="overflow-hidden rounded bg-neutral-100 w-[170px]">
                 <article className="flex flex-col justify-center border border-dashed p-8 w-full rounded border-neutral-200">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/4d306f01e120ac49da1eb5e3a9ad3581778f2857"
+                    src={droxy.src}
                     className="object-contain aspect-[3.62] w-[116px]"
                     alt="Droxy logo"
                   />
@@ -130,7 +135,7 @@ const HappyClients = () => {
             width: 1px;
             height: 850px;
             background-color: #CBD5E180;
-            margin-left: 1600px;
+            margin-left: 1750px;
             position: absolute;
           }
           .circle {

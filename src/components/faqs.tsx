@@ -2,23 +2,53 @@ import React, { useEffect, useRef, useState } from 'react'
 
 const Faqs = () => {
 
-  const [activeTab, setActiveTab] = useState<'retainers' | 'projects' | null>(null);
-  const [retainersHeight, setRetainersHeight] = useState<number>(0);
-  const [projectsHeight, setProjectsHeight] = useState<number>(0);
+  const [activeTab, setActiveTab] = useState<'tab1' | 'tab2' | 'tab3' | 'tab4' | 'tab5' | 'tab6' | 'tab7' | 'tab8' | null>(null);
+  const [tab1Height, setTab1Height] = useState<number>(0);
+  const [tab2Height, setTab2Height] = useState<number>(0);
+  const [tab3Height, setTab3Height] = useState<number>(0);
+  const [tab4Height, setTab4Height] = useState<number>(0);
+  const [tab5Height, setTab5Height] = useState<number>(0);
+  const [tab6Height, setTab6Height] = useState<number>(0);
+  const [tab7Height, setTab7Height] = useState<number>(0);
+  const [tab8Height, setTab8Height] = useState<number>(0);
 
-  const retainersContentRef = useRef<HTMLDivElement>(null);
-  const projectsContentRef = useRef<HTMLDivElement>(null);
+  const tab1ContentRef = useRef<HTMLDivElement>(null);
+  const tab2ContentRef = useRef<HTMLDivElement>(null);
+  const tab3ContentRef = useRef<HTMLDivElement>(null);
+  const tab4ContentRef = useRef<HTMLDivElement>(null);
+  const tab5ContentRef = useRef<HTMLDivElement>(null);
+  const tab6ContentRef = useRef<HTMLDivElement>(null);
+  const tab7ContentRef = useRef<HTMLDivElement>(null);
+  const tab8ContentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (retainersContentRef.current) {
-      setRetainersHeight(retainersContentRef.current.scrollHeight);
+    if (tab1ContentRef.current) {
+      setTab1Height(tab1ContentRef.current.scrollHeight);
     }
-    if (projectsContentRef.current) {
-      setProjectsHeight(projectsContentRef.current.scrollHeight);
+    if (tab2ContentRef.current) {
+      setTab2Height(tab2ContentRef.current.scrollHeight);
+    }
+    if (tab3ContentRef.current) {
+      setTab3Height(tab3ContentRef.current.scrollHeight);
+    }
+    if (tab4ContentRef.current) {
+      setTab4Height(tab4ContentRef.current.scrollHeight);
+    }
+    if (tab5ContentRef.current) {
+      setTab5Height(tab5ContentRef.current.scrollHeight);
+    }
+    if (tab6ContentRef.current) {
+      setTab6Height(tab6ContentRef.current.scrollHeight);
+    }
+    if (tab7ContentRef.current) {
+      setTab7Height(tab7ContentRef.current.scrollHeight);
+    }
+    if (tab8ContentRef.current) {
+      setTab8Height(tab8ContentRef.current.scrollHeight);
     }
   }, []);
 
-  const toggleTab = (tab: 'retainers' | 'projects') => {
+  const toggleTab = (tab: 'tab1' | 'tab2' | 'tab3' | 'tab4' | 'tab5' | 'tab6' | 'tab7' | 'tab8') => {
     setActiveTab(activeTab === tab ? null : tab);
   };
 
@@ -47,24 +77,24 @@ const Faqs = () => {
           <div className="border-b border-gray-100">
             <div
               className="flex justify-between items-center p-4 cursor-pointer"
-              onClick={() => toggleTab('retainers')}
+              onClick={() => toggleTab('tab1')}
             >
               <h3 className="font-extrabold text-lg uppercase">What happens if my project scope changes mid-way?</h3>
               <div className="w-11 h-11 flex items-center justify-center">
-                <span className={`text-3xl font-light text-orange-600 transition-transform duration-300 ${activeTab === 'retainers' ? 'transform rotate-45' : ''}`}>+</span>
+                <span className={`text-3xl font-light text-orange-600 transition-transform duration-300 ${activeTab === 'tab1' ? 'transform rotate-45' : ''}`}>+</span>
               </div>
             </div>
 
             <div
               className="overflow-hidden transition-all duration-300 ease-in-out border-t border-gray-100"
               style={{
-                maxHeight: activeTab === 'retainers' ? `${retainersHeight}px` : '0px',
-                opacity: activeTab === 'retainers' ? 1 : 0,
-                borderTopWidth: activeTab === 'retainers' ? '1px' : '0px'
+                maxHeight: activeTab === 'tab1' ? `${tab1Height}px` : '0px',
+                opacity: activeTab === 'tab1' ? 1 : 0,
+                borderTopWidth: activeTab === 'tab1' ? '1px' : '0px'
               }}
             >
-              <div ref={retainersContentRef} className="p-6">
-                {/* Content for retainers tab would go here */}
+              <div ref={tab1ContentRef} className="p-6">
+                {/* Content for tab1 would go here */}
                 <p className="text-sm text-gray-700 mb-8">
                   Monthly retainer packages starting at $X,XXX per month.
                 </p>
@@ -78,23 +108,23 @@ const Faqs = () => {
           <div className="border-b border-gray-100">
             <div
               className="flex justify-between items-center p-4 cursor-pointer"
-              onClick={() => toggleTab('projects')}
+              onClick={() => toggleTab('tab2')}
             >
               <h3 className="font-extrabold text-lg uppercase">Can you collaborate with our in-house team?</h3>
               <div className="w-11 h-11 flex items-center justify-center">
-                <span className={`text-3xl font-light text-orange-600 transition-transform duration-300 ${activeTab === 'projects' ? 'transform rotate-45' : ''}`}>+</span>
+                <span className={`text-3xl font-light text-orange-600 transition-transform duration-300 ${activeTab === 'tab2' ? 'transform rotate-45' : ''}`}>+</span>
               </div>
             </div>
 
             <div
               className="overflow-hidden transition-all duration-300 ease-in-out border-t border-gray-100"
               style={{
-                maxHeight: activeTab === 'projects' ? `${projectsHeight}px` : '0px',
-                opacity: activeTab === 'projects' ? 1 : 0,
-                borderTopWidth: activeTab === 'projects' ? '1px' : '0px'
+                maxHeight: activeTab === 'tab2' ? `${tab2Height}px` : '0px',
+                opacity: activeTab === 'tab2' ? 1 : 0,
+                borderTopWidth: activeTab === 'tab2' ? '1px' : '0px'
               }}
             >
-              <div ref={projectsContentRef} className="p-6">
+              <div ref={tab2ContentRef} className="p-6">
                 <p className="text-sm text-gray-700 mb-8">
                   Crystal-clear scope, timeline, and deliverables. Starting at $15k.
                 </p>
@@ -161,24 +191,24 @@ const Faqs = () => {
           <div className="border-b border-gray-100">
             <div
               className="flex justify-between items-center p-4 cursor-pointer"
-              onClick={() => toggleTab('retainers')}
+              onClick={() => toggleTab('tab3')}
             >
               <h3 className="font-extrabold text-lg uppercase">why not hire designers full-time?</h3>
               <div className="w-11 h-11 flex items-center justify-center">
-                <span className={`text-3xl font-light text-orange-600 transition-transform duration-300 ${activeTab === 'retainers' ? 'transform rotate-45' : ''}`}>+</span>
+                <span className={`text-3xl font-light text-orange-600 transition-transform duration-300 ${activeTab === 'tab3' ? 'transform rotate-45' : ''}`}>+</span>
               </div>
             </div>
 
             <div
               className="overflow-hidden transition-all duration-300 ease-in-out border-t border-gray-100"
               style={{
-                maxHeight: activeTab === 'retainers' ? `${retainersHeight}px` : '0px',
-                opacity: activeTab === 'retainers' ? 1 : 0,
-                borderTopWidth: activeTab === 'retainers' ? '1px' : '0px'
+                maxHeight: activeTab === 'tab3' ? `${tab3Height}px` : '0px',
+                opacity: activeTab === 'tab3' ? 1 : 0,
+                borderTopWidth: activeTab === 'tab3' ? '1px' : '0px'
               }}
             >
-              <div ref={retainersContentRef} className="p-6">
-                {/* Content for retainers tab would go here */}
+              <div ref={tab3ContentRef} className="p-6">
+                {/* Content for tab3 would go here */}
                 <p className="text-sm text-gray-700 mb-8">
                   Monthly retainer packages starting at $X,XXX per month.
                 </p>
@@ -192,23 +222,23 @@ const Faqs = () => {
           <div className="border-b border-gray-100">
             <div
               className="flex justify-between items-center p-4 cursor-pointer"
-              onClick={() => toggleTab('projects')}
+              onClick={() => toggleTab('tab4')}
             >
               <h3 className="font-extrabold text-lg uppercase">designme vs other contractors</h3>
               <div className="w-11 h-11 flex items-center justify-center">
-                <span className={`text-3xl font-light text-orange-600 transition-transform duration-300 ${activeTab === 'projects' ? 'transform rotate-45' : ''}`}>+</span>
+                <span className={`text-3xl font-light text-orange-600 transition-transform duration-300 ${activeTab === 'tab4' ? 'transform rotate-45' : ''}`}>+</span>
               </div>
             </div>
 
             <div
               className="overflow-hidden transition-all duration-300 ease-in-out border-t border-gray-100"
               style={{
-                maxHeight: activeTab === 'projects' ? `${projectsHeight}px` : '0px',
-                opacity: activeTab === 'projects' ? 1 : 0,
-                borderTopWidth: activeTab === 'projects' ? '1px' : '0px'
+                maxHeight: activeTab === 'tab4' ? `${tab4Height}px` : '0px',
+                opacity: activeTab === 'tab4' ? 1 : 0,
+                borderTopWidth: activeTab === 'tab4' ? '1px' : '0px'
               }}
             >
-              <div ref={projectsContentRef} className="p-6">
+              <div ref={tab4ContentRef} className="p-6">
                 <p className="text-sm text-gray-700 mb-8">
                   Crystal-clear scope, timeline, and deliverables. Starting at $15k.
                 </p>
@@ -275,24 +305,24 @@ const Faqs = () => {
           <div className="border-b border-gray-100">
             <div
               className="flex justify-between items-center p-4 cursor-pointer"
-              onClick={() => toggleTab('retainers')}
+              onClick={() => toggleTab('tab5')}
             >
               <h3 className="font-extrabold text-lg uppercase">how do you charge?</h3>
               <div className="w-11 h-11 flex items-center justify-center">
-                <span className={`text-3xl font-light text-orange-600 transition-transform duration-300 ${activeTab === 'retainers' ? 'transform rotate-45' : ''}`}>+</span>
+                <span className={`text-3xl font-light text-orange-600 transition-transform duration-300 ${activeTab === 'tab5' ? 'transform rotate-45' : ''}`}>+</span>
               </div>
             </div>
 
             <div
               className="overflow-hidden transition-all duration-300 ease-in-out border-t border-gray-100"
               style={{
-                maxHeight: activeTab === 'retainers' ? `${retainersHeight}px` : '0px',
-                opacity: activeTab === 'retainers' ? 1 : 0,
-                borderTopWidth: activeTab === 'retainers' ? '1px' : '0px'
+                maxHeight: activeTab === 'tab5' ? `${tab5Height}px` : '0px',
+                opacity: activeTab === 'tab5' ? 1 : 0,
+                borderTopWidth: activeTab === 'tab5' ? '1px' : '0px'
               }}
             >
-              <div ref={retainersContentRef} className="p-6">
-                {/* Content for retainers tab would go here */}
+              <div ref={tab5ContentRef} className="p-6">
+                {/* Content for tab5 would go here */}
                 <p className="text-sm text-gray-700 mb-8">
                   Monthly retainer packages starting at $X,XXX per month.
                 </p>
@@ -306,23 +336,23 @@ const Faqs = () => {
           <div className="border-b border-gray-100">
             <div
               className="flex justify-between items-center p-4 cursor-pointer"
-              onClick={() => toggleTab('projects')}
+              onClick={() => toggleTab('tab6')}
             >
               <h3 className="font-extrabold text-lg uppercase">Do you handle content creation, or should we provide copy and visuals?</h3>
               <div className="w-11 h-11 flex items-center justify-center">
-                <span className={`text-3xl font-light text-orange-600 transition-transform duration-300 ${activeTab === 'projects' ? 'transform rotate-45' : ''}`}>+</span>
+                <span className={`text-3xl font-light text-orange-600 transition-transform duration-300 ${activeTab === 'tab6' ? 'transform rotate-45' : ''}`}>+</span>
               </div>
             </div>
 
             <div
               className="overflow-hidden transition-all duration-300 ease-in-out border-t border-gray-100"
               style={{
-                maxHeight: activeTab === 'projects' ? `${projectsHeight}px` : '0px',
-                opacity: activeTab === 'projects' ? 1 : 0,
-                borderTopWidth: activeTab === 'projects' ? '1px' : '0px'
+                maxHeight: activeTab === 'tab6' ? `${tab6Height}px` : '0px',
+                opacity: activeTab === 'tab6' ? 1 : 0,
+                borderTopWidth: activeTab === 'tab6' ? '1px' : '0px'
               }}
             >
-              <div ref={projectsContentRef} className="p-6">
+              <div ref={tab6ContentRef} className="p-6">
                 <p className="text-sm text-gray-700 mb-8">
                   Crystal-clear scope, timeline, and deliverables. Starting at $15k.
                 </p>
@@ -389,24 +419,24 @@ const Faqs = () => {
           <div className="border-b border-gray-100">
             <div
               className="flex justify-between items-center p-4 cursor-pointer"
-              onClick={() => toggleTab('retainers')}
+              onClick={() => toggleTab('tab7')}
             >
               <h3 className="font-extrabold text-lg uppercase">What if I only need a small design task?</h3>
               <div className="w-11 h-11 flex items-center justify-center">
-                <span className={`text-3xl font-light text-orange-600 transition-transform duration-300 ${activeTab === 'retainers' ? 'transform rotate-45' : ''}`}>+</span>
+                <span className={`text-3xl font-light text-orange-600 transition-transform duration-300 ${activeTab === 'tab7' ? 'transform rotate-45' : ''}`}>+</span>
               </div>
             </div>
 
             <div
               className="overflow-hidden transition-all duration-300 ease-in-out border-t border-gray-100"
               style={{
-                maxHeight: activeTab === 'retainers' ? `${retainersHeight}px` : '0px',
-                opacity: activeTab === 'retainers' ? 1 : 0,
-                borderTopWidth: activeTab === 'retainers' ? '1px' : '0px'
+                maxHeight: activeTab === 'tab7' ? `${tab7Height}px` : '0px',
+                opacity: activeTab === 'tab7' ? 1 : 0,
+                borderTopWidth: activeTab === 'tab7' ? '1px' : '0px'
               }}
             >
-              <div ref={retainersContentRef} className="p-6">
-                {/* Content for retainers tab would go here */}
+              <div ref={tab7ContentRef} className="p-6">
+                {/* Content for tab7 would go here */}
                 <p className="text-sm text-gray-700 mb-8">
                   Monthly retainer packages starting at $X,XXX per month.
                 </p>
@@ -420,23 +450,23 @@ const Faqs = () => {
           <div>
             <div
               className="flex justify-between items-center p-4 cursor-pointer"
-              onClick={() => toggleTab('projects')}
+              onClick={() => toggleTab('tab8')}
             >
               <h3 className="font-extrabold text-lg uppercase">How soon can you start?</h3>
               <div className="w-11 h-11 flex items-center justify-center">
-                <span className={`text-3xl font-light text-orange-600 transition-transform duration-300 ${activeTab === 'projects' ? 'transform rotate-45' : ''}`}>+</span>
+                <span className={`text-3xl font-light text-orange-600 transition-transform duration-300 ${activeTab === 'tab8' ? 'transform rotate-45' : ''}`}>+</span>
               </div>
             </div>
 
             <div
               className="overflow-hidden transition-all duration-300 ease-in-out border-t border-gray-100"
               style={{
-                maxHeight: activeTab === 'projects' ? `${projectsHeight}px` : '0px',
-                opacity: activeTab === 'projects' ? 1 : 0,
-                borderTopWidth: activeTab === 'projects' ? '1px' : '0px'
+                maxHeight: activeTab === 'tab8' ? `${tab8Height}px` : '0px',
+                opacity: activeTab === 'tab8' ? 1 : 0,
+                borderTopWidth: activeTab === 'tab8' ? '1px' : '0px'
               }}
             >
-              <div ref={projectsContentRef} className="p-6">
+              <div ref={tab8ContentRef} className="p-6">
                 <p className="text-sm text-gray-700 mb-8">
                   Crystal-clear scope, timeline, and deliverables. Starting at $15k.
                 </p>
