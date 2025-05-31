@@ -18,7 +18,7 @@ const BookingForm = () => {
           <div className="circle top-circle"></div>
           <div className="circle bottom-circle"></div>
         </article>
-        <div className="absolute top-0 left-[275px] h-[850px] flex flex-col justify-between py-4">
+        <div className="absolute top-0 left-[125px] h-[850px] flex flex-col justify-between py-4">
           {numbers.map((num) => (
             <div key={num} className="flex items-center marker-container">
               <span className="number-label">{num}</span>
@@ -139,15 +139,15 @@ const BookingForm = () => {
             width: 1px;
             height: 850px;
             background-color: #CBD5E180;
-            margin-left: 310px;
+            margin-left: 160px;
             position: absolute;
           }
           .vLine-1 {
             width: 1px;
             height: 850px;
             background-color: #CBD5E180;
-            margin-left: 1750px;
             position: absolute;
+            right: 8%;
           }
           .circle {
             width: 4px;
